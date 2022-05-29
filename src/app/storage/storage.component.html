@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headline">
+        <input type="file" (change)="upload($event)">
+    <button mat-raised-button type="button" (click)="uploadData()">Uplaod</button>
+
+        <h1>DownloadUrl</h1>
+        <h2>{{url}}</h2>
+    </div>
+    <div class="track">
+        <h1>{{percent}}</h1>
+        
+   </div>
+
+</body>
+</html>

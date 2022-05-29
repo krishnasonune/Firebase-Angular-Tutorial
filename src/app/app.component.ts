@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firebasee';
+
+  links = [
+      {path: 'main', label: 'Read / Write', icon: 'edit_note'},
+      {path: 'home', label: 'Authentication', icon: 'lock'},
+      {path: 'storage', label: 'Storage', icon: 'folder_open'}
+  ]
+
 }

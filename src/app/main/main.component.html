@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headline">
+        <h1>Welcome to Firebase Tutorials</h1>
+
+        
+
+        <form #form="ngForm" (ngSubmit)="writeData(form)">
+            <p>
+                <mat-form-field color="warn"  appearance="outline">
+                  <mat-label>name</mat-label>
+                  <input matInput name="name" ngModel placeholder="name">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Name</mat-hint>
+                </mat-form-field>
+              </p>
+              <p>
+                <mat-form-field color="warn" appearance="outline">
+                  <mat-label>age</mat-label>
+                  <input matInput name="age" ngModel placeholder="age">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>age</mat-hint>
+                </mat-form-field>
+              </p>
+              <p>
+                <mat-form-field color="warn" appearance="outline">
+                  <mat-label>Phone no</mat-label>
+                  <input matInput type="number" ngModel name="phn" placeholder="phone no">
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint>Phone no</mat-hint>
+                </mat-form-field>
+              </p>
+              <button mat-raised-button color="warn" type="submit"> submit </button>
+        </form>
+
+        <h2>Result</h2>
+        
+       <ul *ngFor="let t of resp">
+           <li>{{t}}</li>
+       </ul>
+
+       
+
+    </div>
+</body>
+</html>
